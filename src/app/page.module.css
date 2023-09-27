@@ -3,23 +3,16 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  min-height: 100vh;
   background-color: var(--background-end-rgb);
-  min-height: 4437px;
+  min-height: 4337px;
   min-width: 1512;
 }
-
 
 .heroBanner{
   font-style: italic;
   text-align: center;
   margin-top:-1rem ;
-}
-
-.heroBanner h1{
-  text-shadow: 0px 0px 4px #FFF, 0px 0px 20px rgba(255, 255, 255, 0.75);
-  font-size: 42px;
-  font-weight: bolder;
+  z-index: 2;
 }
 
 .heroBanner h3{
@@ -36,14 +29,391 @@
 .heroBanner span{
   text-decoration: underline;
 }
+.leftBannerOffer{
+  color: white;
+  position: absolute;
+  left: 8rem;
+  top: 16rem;
+}
+
+.leftBannerOffer h3{
+  font-style:normal;
+  text-align: left;
+  text-shadow: none;
+}
+
+.leftBannerOffer h3 span:nth-child(2){
+  text-decoration: line-through;
+  color: #bbbbbb;
+}
+.rightBannerOffer{
+  position: absolute;
+  right: 6rem;
+  top: 26rem;
+}
+.rightBannerOffer h3{
+  text-align: right;
+  font-style: normal;
+  text-shadow: none;
+}
+.pumpInfoContainer{
+  position: absolute;
+  top: 50rem;
+  right: 3rem;
+  z-index: 3;
+  width: 55%;
+}
+.pumpInfoContainer h3{
+  text-shadow: 0px 0px 4px #FFF, 0px 0px 20px rgba(255, 255, 255, 0.75);
+  font-style: italic;
+  text-align: right;
+}
+
+.pumpInfoContainer p{
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.pumpInfoCards{
+  display: flex;
+  gap: 2%;
+}
+
+.pumpInfoHeader{
+  display: none;
+}
+
+.productsGallery{
+  position: absolute;
+  top: 100rem;
+  z-index: 4;
+  text-align: left;
+  width: 100%;
+  margin-left: 6rem;
+}
+.productsGallery h2{
+  font-size: 28px;
+  color: white;
+  text-align: left;
+}
+
+.productsGallery p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 48%;
+}
+
+.ProductCardsContainer{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Reviews{
+  position: absolute;
+  top: 195rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding-bottom:4rem ;
+}
+.Reviews button{
+  width: 90%;
+}
+.Reviews h1{
+  font-size: 40px;
+}
+
+.Reviews p{
+  font-size: 18px;
+  width: 60%;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 1rem;
+
+}
+
+.highlightReview{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 5rem;
+  border: 1px solid #FFF;
+  box-shadow:  0px 0px 10px 0px #FFF;
+  border-radius: 5px;
+}
+
+.highlightReview img{
+  margin-right: 0.5rem;
+}
+
+.ReviewBoxContainer{
+  margin-top: 4rem;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
 
 
-.heroImageDesktop{
-  padding: 0;
-  margin: 0;
-  position: relative;
-  left: 0;
-  right: 0;
-  top: -8rem;
-  z-index: -1;
+.footer{
+  position: absolute;
+  z-index: 999;
+  top: 258rem;
+}
+
+.mobileCta{
+  display: none;
+}
+
+.navProducts{
+  display: none;
+}
+
+.ctaPostProducts{
+  display: none;
+}
+
+.features{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .main{
+    /* width: 100vw; */
+    max-width: 100vw;
+    height: 5307px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+
+  .main button:first-child{
+    background-color: #bbbbbb;
+  }
+  .heroBanner{
+    margin-top: 0.5rem;
+  }
+  .heroBanner h1{
+    font-size: 27px;
+  }
+
+  .heroBanner h3{
+    font-size: 14px;
+  }
+
+  .leftBannerOffer{
+    top: 12rem;
+    left: 2rem;
+  }
+
+  .leftBannerOffer h3{
+    font-size: 12px;
+  }
+
+  .rightBannerOffer{
+    top: 15rem;
+    right: 2rem;
+  }
+
+  .rightBannerOffer h3{
+    font-size: 12px;
+  }
+
+  .mobileCta{
+    display: block;
+    z-index: 4;
+    position: absolute;
+    top: 40rem;
+    width: 90%;
+  }
+
+  .mobileCta button{
+    font-size: 14px;
+  }
+  
+  .pumpInfoContainer{
+    width: 100%;
+    margin: auto;
+    padding: 0 0 0 2rem;
+    top: 48rem;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .pumpInfoContainer h3{
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+    margin: auto;
+    margin-left: 3rem;
+  }
+
+  .pumpInfoContainer p{
+    font-size: 14px;
+    text-align: left;
+    line-height: 125%;
+    margin-left: 3rem;
+  }
+
+  .pumpInfoContainer button{
+    display: none;
+  }
+
+  .pumpInfoCards{
+    position: absolute;
+    top: 47rem;
+    left: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 2rem;
+  }
+
+  .pumpInfoHeader{
+    display: block;
+  }
+
+  .pumpInfoHeader h4{
+    text-shadow: 0px 0px 10px #FFF;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .pumpInfoHeader p{
+    font-size: 14px;
+    margin-left: 0rem
+  }
+
+  .navProducts{
+    display: block;
+    position: absolute;
+    color: white;
+    top: 57rem;
+    z-index: 5;
+    text-align: left;
+    width: 90%;
+    font-weight: 800;
+    font-size: 14px;
+    padding-left: 4px;
+    text-decoration: underline;
+    color: #72d12a;
+    margin-left: 1rem;
+  }
+  .navProducts img{
+    padding-top: 4px;
+  }
+
+  .navProducts div{
+    position: absolute;
+    top: 29rem;
+    width: 100%;
+  }
+
+  .productsGallery{
+    top: 170rem;
+  }
+
+  .mobileCta button:nth-child(2){
+    position: absolute;
+    left: 0.5rem;
+    top: 124rem;
+  }
+
+  .productsGallery{
+    margin-top: 2rem;
+  }
+  .productsGallery h2{
+    font-size: 17px;
+    width: 80%;
+    margin-left: -1rem;
+  }
+  .productsGallery p{
+    font-size: 14px;
+    width: 80%;
+    margin-left: -1rem;
+  }
+
+  .ProductCardsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90vw;
+    position: absolute;
+    top: 34rem;
+    left: -1.5rem;
+  }s
+
+  .ReviewBoxContainer{
+    display: none;
+  }
+
+  .ctaPostProducts{
+    display: block;
+    z-index: 999;
+    position: absolute;
+    top: 246rem;
+    width: 90%;
+    left: 1.75rem;
+  }
+  
+  .ctaPostProducts button{
+    font-size: 15px;
+  }
+
+  .Reviews{
+    top: 255rem;
+    border-bottom: none;
+  }
+
+  .Reviews h1{
+    font-size: 22px;
+    text-shadow: none;
+  }
+
+  .Reviews br, .highlightReview{
+    display: none;
+  }
+
+  .Reviews p{
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .ReviewBoxContainer{
+    display: flex;
+    height:  fit-content;
+    max-width:100vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: transparent;
+    margin-left: 1rem;
+  }
+
+  .ReviewBoxContainer div{
+    width: 18rem;
+    justify-content: center;
+  }
+  
+  .features{
+    display: grid;
+    z-index: 999;
+    position: absolute;
+    top: 289.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .footer{
+    top: 309rem;
+  }
 }

@@ -1,0 +1,23 @@
+.cta{
+    margin: auto;
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background-color: #72D12A;
+    color: #fff;
+  }
+  
+  .cta:hover{
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 768px){
+    .cta{
+        width: 95%;
+        font-size: 14px;
+    }
+  }

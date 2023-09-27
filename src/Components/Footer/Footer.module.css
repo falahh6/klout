@@ -1,0 +1,52 @@
+.Footer > div{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+.disclaimer h4, .about h4{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.disclaimer p, .about p{
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.powered{
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.powered span{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+    .Footer > div{
+        border-radius: 8px;
+        border-top: 2px solid white;
+        flex-direction: column;
+        padding-top: 2rem;
+        width: 100vw;
+    }
+
+    .disclaimer h4, .about h4{
+        font-size: 14px;
+    }
+
+    .disclaimer p, .about p{
+        margin-top: 1rem;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .logo{
+        display: none;
+    }
+}

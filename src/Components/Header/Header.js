@@ -11,6 +11,15 @@ const Header = () => {
         }
         width={170}
         height={64}
+        className={styles.desktopLogo}
+      />
+      <Image
+        src={
+          "https://res.cloudinary.com/dod9nbjke/image/upload/v1691872483/Klout/Logos/Alian-Green-min_d4vyct.png"
+        }
+        width={45}
+        height={49}
+        className={styles.mobileLogo}
       />
       <div className={styles.offerHead}>
         <Image src={DangerIcon} width={19} height={16} alt="warning icon" />

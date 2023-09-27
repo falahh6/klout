@@ -203,3 +203,9 @@ p {
 .test {
   color: white;
 }
+
+@media (max-width: 768px){
+  body{
+    max-width: 393px;
+  }
+}

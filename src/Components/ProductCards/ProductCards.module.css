@@ -1,0 +1,131 @@
+.ProductCards{
+    height: 39rem;
+    width: 95%;
+    border: 1px solid white;
+    margin-top: 1rem;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.ProductCards img{
+    margin: 1rem auto 0 auto;
+}
+
+.ProductCards h4{
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 80%;
+    margin: auto;
+}
+
+.ProductCards p:nth-child(3){
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    width: 100%;
+    text-align:left;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 0.5rem;
+    /* margin-left: 1rem; */
+}
+
+.ProductCards p:nth-child(4){
+    font-size: 16px;
+    /* font-weight: 600; */
+    text-align: left;
+    margin-left: 1.5rem;
+    width: fit-content;
+    margin-top: 0;
+}
+
+.ProductCards p:nth-child(4) span{
+    color: #B7B0B0;
+}
+
+.ProductCards button{
+    width: 90%;
+    margin: 0 auto;
+    height: 2.75rem ;
+    margin-top: 0.5rem;
+    border-radius: 0;
+    border: 1px solid white;
+    background-color: #72D12A;
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+}
+
+.ProductCards button:hover{
+    cursor: pointer;
+    background-color: #72D12A;
+}
+
+.mobileImage{
+    display: none;
+}
+.ProductCards ul{
+    display: none;
+}
+@media (max-width: 768px){
+
+    .ProductCards{
+        height: fit-content;
+        width: 167px;
+    }
+
+    .ProductCards img{
+        margin-top: 0.5rem;
+    }
+
+    .mobileImage{
+    display: block;
+    }
+    .desktopInage{
+        display: none;
+    }
+
+    .ProductCards h4{
+        font-size: 12px;
+    }
+
+    .ProductCards p{
+        display: none;
+    }
+
+    .ProductCards ul{
+        display: block;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        margin-left: 0.5rem;
+    }
+
+    .ProductCards ul img{
+        margin-top: 6px;
+    }
+
+    .ProductCards ul span{
+        font-size: 10px;
+        margin-left: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .ProductCards button{
+        height: 29px;
+        font-size: 12px;
+    }
+}
