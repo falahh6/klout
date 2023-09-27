@@ -1,9 +1,5 @@
 :root {
-  /* General Variables */
-
-  --borderRadius: 2px;
-
-  /* Colors and Typography */
+  /* Colors */
   --white : #fff;
   --primary-color: #72d12a;
   --bg500: #e0e0e0;
@@ -11,6 +7,8 @@
   --bg700: #333333;
   --bg800: #1d1d1d;
 
+
+  /* Effects  */
   --blackHighlight: 1px 1px 1px black, -1px 1px 1px black, 0px -1px 1px black;
   --shadow: 0px 2px 5px rgb(0, 0, 0, 0.25);
   --boxOutlineDark: 1px 2px 0px black;
@@ -21,9 +19,9 @@
     -1px 1px 0 #000, 1px 1px 0 #000;
   --textOutlineLight: 1px 2px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
     -1px 1px 0 #fff, 1px 1px 0 #fff;
+  --textShadow :  0px 4px 4px rgba(255, 255, 255, 0.25), 0px 0px 4px rgba(255, 255, 255, 0.75)
 
   /* Page Structure Settings  */
-
   --paddingMobile: 20px 24px;
   --paddingDesktop: 20px 48px;
   --boxPadding: 18px;
@@ -169,9 +167,6 @@ p {
   text-decoration: underline;
 }
 
-@media (min-width: 641px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
 @media (min-width: 961px) {
   h1 {
     font-size: 44px;
@@ -196,12 +191,6 @@ p {
   p {
     font-size: 15px;
   }
-}
-@media (min-width: 1025px) {
-}
-
-.test {
-  color: white;
 }
 
 @media (max-width: 768px){

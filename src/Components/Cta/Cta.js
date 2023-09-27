@@ -1,3 +1,5 @@
+// A Call to Action button
+
 import styles from "./Cta.module.css";
 
 const Cta = () => {
